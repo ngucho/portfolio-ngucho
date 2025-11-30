@@ -1,10 +1,10 @@
-# DocFira Portfolio
+# Docfira Portfolio
 
-Portfolio professionnel de **Jordan NGUCHO** — Présentation du projet DocFira, plateforme e-santé pour le suivi intelligent des maladies chroniques en Côte d'Ivoire.
+Portfolio professionnel de **Jordan NGUCHO** — Présentation du projet Docfira, plateforme e-santé pour le suivi intelligent des maladies chroniques en Côte d'Ivoire.
 
 ## 📋 Description
 
-DocFira est une plateforme mobile & web conçue pour le suivi intelligent des maladies chroniques (hypertension, diabète) en Côte d'Ivoire. La solution combine une application patient, un dashboard professionnel, des alertes IA, et des fonctionnalités offline avec fallback SMS/USSD.
+Docfira est une plateforme mobile & web conçue pour le suivi intelligent des maladies chroniques (hypertension, diabète) en Côte d'Ivoire. La solution combine une application patient, un dashboard professionnel, des alertes IA, et des fonctionnalités offline avec fallback SMS/USSD.
 
 ## 🚀 Fonctionnalités
 
@@ -49,7 +49,7 @@ Ce portfolio peut être déployé sur :
 2. Uploadez les fichiers du portfolio
 3. Allez dans **Settings** > **Pages**
 4. Sélectionnez la branche `main` (ou `master`)
-5. Le site sera disponible à `https://ngucho.github.io/portfolio/`
+5. Le site sera disponible à `https://ngucho.github.io/portfolio-ngucho/`
 
 ## 📝 Notes importantes
 
@@ -66,7 +66,7 @@ Ce portfolio peut être déployé sur :
 ## 👤 Auteur
 
 **Jordan NGUCHO**
-- Founder & Tech Lead — DocFira
+- Founder & Tech Lead — Docfira
 - Paris, France
 - Disponible pour déplacement Abidjan
 
