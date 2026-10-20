@@ -30,6 +30,14 @@ assets/           profile photo (jpg/webp) and CV (PDF)
 Everything lives in `js/data.js`. Every visible string is `{ en: "...", fr: "..." }`.
 To add a project, copy an object in `projects` and change it: `id` becomes the deep link, `hue` sets the card colour, `icon` is one of the sprite icons in `index.html` (`pulse`, `engine`, `wave`, `chart`, `spark`, `building`, `network`, `eye`, `cube`, `leaf`, …), and `tags` map to the filter chips in `categories`.
 
+### Calendly
+
+Paste your booking link in `profile.calendly` in `js/data.js` (e.g. `"https://calendly.com/your-name/30min"`). "Book a call" buttons then appear in the hero, the contact section and every case study. Leave it empty to hide them.
+
+### Project screenshots
+
+Put `name.webp` + `name.jpg` in `assets/projects/` and set `image: "assets/projects/name"` on the project.
+
 Interface labels (buttons, headings) are in the `UI` dictionary at the top of `js/main.js`.
 
 ## Run locally

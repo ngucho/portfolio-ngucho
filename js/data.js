@@ -14,6 +14,8 @@ window.PORTFOLIO = {
     github: "https://github.com/ngucho",
     githubUser: "ngucho",
     cv: "assets/Jordan-ngucho-cv.pdf",
+    // Paste your Calendly link here (e.g. "https://calendly.com/jordan-ngucho/30min") to show "Book a call" buttons.
+    calendly: "",
     roles: {
       en: ["Data Scientist", "AI Project Lead", "Solution Architect", "Startup Co-founder", "MLOps Engineer"],
       fr: ["Data Scientist", "Chef de projet IA", "Architecte solution", "Co-fondateur de startups", "Ingénieur MLOps"]
@@ -39,30 +41,32 @@ window.PORTFOLIO = {
           "Lead a team of 4 Data/AI engineers delivering 5+ critical industrial projects to production.",
           "Designed an end-to-end architecture (PostgreSQL → TensorFlow → FastAPI → React) with real-time anomaly detection and digital twins.",
           "Set up GitLab CI/CD + Docker pipelines with 24/7 monitoring of model performance in production.",
-          "Optimised ETL pipelines for massive high-frequency industrial data and complex SQL workloads."
+          "Built and exposed ETL pipelines so plants can retrieve their high-frequency production data on their own, with optimised complex SQL.",
+          "Delivered web apps (Dash, FastAPI) and analysis & forecasting tools used by engineering and production teams."
         ],
         fr: [
           "Management d'une équipe de 4 ingénieurs Data/IA pour livrer 5+ projets industriels critiques en production.",
           "Conception d'une architecture de bout en bout (PostgreSQL → TensorFlow → FastAPI → React) avec détection d'anomalies temps réel et jumeaux numériques.",
           "Mise en place de pipelines CI/CD GitLab + Docker avec supervision 24/7 de la performance des modèles.",
-          "Optimisation des pipelines ETL pour des volumes massifs de données industrielles haute fréquence."
+          "Conception et mise à disposition d'ETL permettant aux usines de récupérer elles-mêmes leurs données de production haute fréquence (SQL complexe optimisé).",
+          "Développement de web apps (Dash, FastAPI) et d'outils d'analyse et de prévision utilisés par l'ingénierie et la production."
         ]
       }
     },
     {
       org: "Jolari Tech",
-      role: { en: "Founder & Lead Data/AI Consultant", fr: "Fondateur & Lead Consultant Data/IA" },
+      role: { en: "Founder (freelance structure)", fr: "Fondateur (structure freelance)" },
       period: { en: "Jul 2026 — Present", fr: "Juil. 2026 — Présent" },
       place: "France",
       type: "venture",
       points: {
         en: [
-          "Consulting missions in Data Engineering, Data Science and full-stack development.",
-          "Product R&D on Zephyru, a consumer app built on advanced recommendation and matching algorithms."
+          "Micro-enterprise set up to take on freelance Data Engineering, Data Science and full-stack missions — available for a first engagement.",
+          "Product R&D on Zephyru, a dating app built on recommendation and matching algorithms (in development)."
         ],
         fr: [
-          "Missions de conseil en Data Engineering, Data Science et développement full-stack.",
-          "R&D produit sur Zephyru, application grand public reposant sur des algorithmes avancés de recommandation et de matching."
+          "Micro-entreprise créée pour accueillir des missions freelance en Data Engineering, Data Science et full-stack — disponible pour une première mission.",
+          "R&D produit sur Zephyru, application de rencontre reposant sur des algorithmes de recommandation et de matching (en développement)."
         ]
       }
     },
@@ -91,14 +95,33 @@ window.PORTFOLIO = {
       type: "venture",
       points: {
         en: [
-          "Designed Scribe, an offline-first GenAI system turning consultation audio into structured medical reports.",
+          "Building docfira.com, a care-continuity suite (Patient, Pro, Scribe, SIH, Connect) for Côte d'Ivoire.",
+          "Designed Scribe, a GenAI system that drafts the report, prescription and follow-up plan in ~30 s instead of ~15 min.",
           "Architected the full stack: Next.js, TypeScript, Hono, Supabase, Upstash, Auth0, Drizzle.",
           "Ran 380+ interviews with patients and health professionals to drive the roadmap and UX."
         ],
         fr: [
-          "Conception de Scribe, système GenAI offline-first transformant l'audio de consultation en comptes rendus médicaux structurés.",
+          "Construction de docfira.com, une suite de continuité des soins (Patient, Pro, Scribe, SIH, Connect) pour la Côte d'Ivoire.",
+          "Conception de Scribe, système GenAI qui rédige compte rendu, ordonnance et plan de suivi en ~30 s au lieu de ~15 min.",
           "Architecture complète : Next.js, TypeScript, Hono, Supabase, Upstash, Auth0, Drizzle.",
           "380+ entretiens avec patients et professionnels de santé pour piloter la roadmap et l'UX."
+        ]
+      }
+    },
+    {
+      org: "Cholala Pepper",
+      role: { en: "Founder & Project Lead", fr: "Fondateur & Chef de projet" },
+      period: { en: "2024 — 2025 (stopped)", fr: "2024 — 2025 (arrêté)" },
+      place: "France — Cameroon",
+      type: "venture",
+      points: {
+        en: [
+          "Ran an agri-food startup on a hybrid France–Cameroon model: producer sourcing, international logistics, multichannel distribution.",
+          "Stopped in 2025 after a crop disease destroyed the plantations."
+        ],
+        fr: [
+          "Pilotage d'une startup agroalimentaire en modèle hybride France–Cameroun : sourcing producteurs, logistique internationale, distribution multicanale.",
+          "Arrêtée en 2025 après qu'une maladie a détruit les plantations."
         ]
       }
     },
@@ -163,43 +186,47 @@ window.PORTFOLIO = {
       title: "Docfira · Scribe",
       org: "Docfira",
       period: "2024 →",
-      status: { en: "Live build", fr: "En développement" },
+      status: { en: "Live", fr: "En ligne" },
       tags: ["genai", "fullstack", "venture"],
       icon: "pulse",
-      hue: 168,
+      hue: 160,
+      image: "assets/projects/docfira",
       tagline: {
-        en: "AI medical scribe & chronic-care platform for Sub-Saharan Africa.",
-        fr: "Scribe médical IA & plateforme de suivi des maladies chroniques en Afrique subsaharienne."
+        en: "Care-continuity suite and AI medical scribe for Côte d'Ivoire — report ready in 30 seconds.",
+        fr: "Suite de continuité des soins et scribe médical IA pour la Côte d'Ivoire — compte rendu prêt en 30 secondes."
       },
       role: { en: "CEO, Co-founder & Solution Architect", fr: "CEO, Co-fondateur & Architecte solution" },
       problem: {
-        en: "Clinicians in Côte d'Ivoire spend a large share of each consultation writing reports, often with unreliable connectivity, while chronic patients (hypertension, diabetes) lack continuous follow-up between visits.",
-        fr: "En Côte d'Ivoire, les soignants passent une part importante de chaque consultation à rédiger, souvent avec une connectivité instable, tandis que les patients chroniques (hypertension, diabète) manquent de suivi entre deux visites."
+        en: "Côte d'Ivoire has about 1 doctor per 10,000 people (WHO norm: 4.5), 23M people newly enrolled in universal health coverage, ~40% of adults with hypertension — and clinicians lose 30–40% of their time to paperwork. Records get lost between consultations, often in poorly connected areas.",
+        fr: "La Côte d'Ivoire compte environ 1 médecin pour 10 000 habitants (norme OMS : 4,5), 23 M d'Ivoiriens enrôlés à la CMU, ~40 % d'adultes hypertendus — et les soignants perdent 30 à 40 % de leur temps en tâches administratives. Le dossier se perd entre deux consultations, souvent dans des zones mal connectées."
       },
       solution: {
-        en: "Scribe listens to the consultation, transcribes it (Speech-to-Text) and uses an LLM to generate a structured medical report the clinician validates. It is offline-first: it keeps working without a network and syncs later. Around it, Docfira provides a patient app (measures, reminders, education) and a professional dashboard that prioritises at-risk patients.",
-        fr: "Scribe écoute la consultation, la transcrit (Speech-to-Text) et génère via un LLM un compte rendu médical structuré que le soignant valide. L'architecture est offline-first : elle fonctionne sans réseau et synchronise ensuite. Autour, Docfira propose une app patient (mesures, rappels, éducation) et un dashboard professionnel qui priorise les patients à risque."
+        en: "Docfira brings the patient, their doctor and the hospital onto one shared care record, through five products: Patient (measures, treatments, reminders), Pro (agenda, records, documents), Scribe, and soon SIH (hospital information system) and Connect (secure care messaging). Scribe listens to the consultation from a computer or phone and drafts the report, prescription and follow-up plan in about 30 seconds instead of 15 minutes. It only documents what was said — no invented advice — and the doctor remains the final validator.",
+        fr: "Docfira réunit le patient, son médecin et l'hôpital autour d'un même dossier de soin, via cinq produits : Patient (mesures, traitements, rappels), Pro (agenda, dossier, documents), Scribe, et bientôt SIH (système d'information hospitalier) et Connect (messagerie sécurisée du soin). Scribe écoute la consultation depuis l'ordinateur ou le téléphone et rédige compte rendu, ordonnance et plan de suivi en 30 secondes environ au lieu de 15 minutes. Il ne documente que ce qui a été dit — aucun conseil inventé — et le médecin reste le validateur final."
       },
-      pipeline: ["Audio capture", "Speech-to-Text", "LLM structuring", "Clinician review", "Offline sync", "Dashboard & alerts"],
+      pipeline: ["Consultation audio", "Speech-to-Text", "LLM drafting", "Doctor validation", "Shared care record", "Patient & alerts"],
       highlights: {
         en: [
           "380+ user interviews (238 patients, 149 health professionals) shaped the roadmap and UX.",
-          "Offline-first architecture designed for low-connectivity clinics.",
-          "Full TypeScript stack with edge-friendly API (Hono) and managed Postgres (Supabase + Drizzle)."
+          "Example journey: a diabetic patient logs glucose daily; three high values in a row raise an alert on the doctor's dashboard.",
+          "Designed for low-connectivity areas (offline-first), with a full TypeScript stack: Next.js, Hono, Supabase + Drizzle, Upstash, Auth0."
         ],
         fr: [
           "380+ entretiens utilisateurs (238 patients, 149 professionnels de santé) pour orienter roadmap et UX.",
-          "Architecture offline-first pensée pour les centres de santé à faible connectivité.",
-          "Stack 100 % TypeScript avec API edge (Hono) et Postgres managé (Supabase + Drizzle)."
+          "Parcours type : un patient diabétique saisit sa glycémie chaque jour ; trois valeurs hautes d'affilée déclenchent une alerte sur le tableau de bord du médecin.",
+          "Pensé pour les zones mal connectées (offline-first), stack 100 % TypeScript : Next.js, Hono, Supabase + Drizzle, Upstash, Auth0."
         ]
       },
       metrics: [
-        { value: "380+", label: { en: "interviews", fr: "entretiens" } },
-        { value: "90%", label: { en: "stated interest", fr: "intérêt déclaré" } },
-        { value: "Offline", label: { en: "first, by design", fr: "first, par conception" } }
+        { value: "30 s", label: { en: "report vs ~15 min by hand", fr: "compte rendu vs ~15 min à la main" } },
+        { value: "5", label: { en: "products in one suite", fr: "produits, une seule suite" } },
+        { value: "380+", label: { en: "user interviews", fr: "entretiens utilisateurs" } }
       ],
       stack: ["Next.js", "TypeScript", "Hono", "Supabase", "Drizzle", "Upstash", "Auth0", "LLMs", "Speech-to-Text"],
-      links: []
+      links: [
+        { label: "docfira.com", url: "https://www.docfira.com" },
+        { label: "Scribe", url: "https://www.docfira.com/scribe" }
+      ]
     },
     {
       id: "safran-anomaly-platform",
@@ -246,6 +273,46 @@ window.PORTFOLIO = {
       links: []
     },
     {
+      id: "safran-factory-data",
+      featured: true,
+      title: { en: "Factory Data Access, Web Apps & Forecasting", fr: "Accès aux données usines, web apps & prévision" },
+      org: "Safran Aircraft Engines",
+      period: "2023 →",
+      status: { en: "In production", fr: "En production" },
+      tags: ["industrial", "fullstack", "ai"],
+      icon: "db",
+      hue: 195,
+      tagline: {
+        en: "ETLs that let plants pull their own data, plus Dash/FastAPI apps and forecasting tools.",
+        fr: "Des ETL qui permettent aux usines de récupérer leurs données, des apps Dash/FastAPI et des outils de prévision."
+      },
+      role: { en: "Data engineer & data scientist", fr: "Data engineer & data scientist" },
+      problem: {
+        en: "Production data was spread across plant systems and hard to retrieve: engineers depended on manual extractions before they could analyse a drift or anticipate the next weeks.",
+        fr: "Les données de production étaient dispersées dans les systèmes des usines et difficiles à récupérer : les ingénieurs dépendaient d'extractions manuelles avant de pouvoir analyser une dérive ou anticiper les semaines à venir."
+      },
+      solution: {
+        en: "Designed and exposed ETL pipelines so plants can retrieve the data they need on their own, then built web applications on top — Dash for interactive analytics, FastAPI for services — and analysis and forecasting tools to predict production behaviour and support decisions.",
+        fr: "Conception et mise à disposition de pipelines ETL pour que les usines récupèrent elles-mêmes les données dont elles ont besoin, puis développement de web apps par-dessus — Dash pour l'analyse interactive, FastAPI pour les services — et d'outils d'analyse et de prévision pour anticiper le comportement de la production et aider à la décision."
+      },
+      pipeline: ["Plant systems", "ETL", "PostgreSQL / SQL", "FastAPI services", "Dash apps", "Forecasts & analysis"],
+      highlights: {
+        en: [
+          "Self-service data access for plants instead of one-off extractions.",
+          "Root-cause analysis, multifactor modelling and time-series forecasting.",
+          "Same platform feeds the real-time anomaly-detection models."
+        ],
+        fr: [
+          "Accès aux données en libre-service pour les usines plutôt que des extractions ponctuelles.",
+          "Analyse de causes racines, modélisation multifactorielle et prévision sur séries temporelles.",
+          "La même plateforme alimente les modèles de détection d'anomalies temps réel."
+        ]
+      },
+      metrics: [],
+      stack: ["Python", "SQL", "PostgreSQL", "ETL", "Dash", "FastAPI", "Time series", "Docker"],
+      links: []
+    },
+    {
       id: "scoop-afrique",
       featured: true,
       title: "Scoop Afrique — Voice AI & CRM",
@@ -254,7 +321,8 @@ window.PORTFOLIO = {
       status: { en: "In production", fr: "En production" },
       tags: ["genai", "fullstack", "venture"],
       icon: "wave",
-      hue: 28,
+      hue: 0,
+      image: "assets/projects/scoop-afrique",
       tagline: {
         en: "Speech AI and a custom CRM for a media with 300M+ monthly views.",
         fr: "IA vocale et CRM sur mesure pour un média à 300M+ vues mensuelles."
@@ -265,8 +333,8 @@ window.PORTFOLIO = {
         fr: "Un média digital africain en forte croissance devait produire et décliner du contenu à grande échelle et gérer partenaires et annonceurs sans outils génériques coûteux."
       },
       solution: {
-        en: "Integrated Speech-to-Text and self-hosted Text-to-Speech (Piper) into the editorial workflow. Built a tailored Next.js CRM, and run the technical roadmap, budget and hiring.",
-        fr: "Intégration du Speech-to-Text et d'un Text-to-Speech auto-hébergé (Piper) dans le flux éditorial. Développement d'un CRM Next.js sur mesure, et pilotage de la roadmap technique, du budget et du recrutement."
+        en: "Integrated Speech-to-Text and self-hosted Text-to-Speech (Piper) into the editorial workflow — every article on scoop-afrique.com can be listened to through a built-in \"Listen to the article\" player. Built a tailored Next.js CRM, and run the technical roadmap, budget and hiring.",
+        fr: "Intégration du Speech-to-Text et d'un Text-to-Speech auto-hébergé (Piper) dans le flux éditorial — chaque article de scoop-afrique.com peut s'écouter via le lecteur « Écouter l'article ». Développement d'un CRM Next.js sur mesure, et pilotage de la roadmap technique, du budget et du recrutement."
       },
       pipeline: ["Raw video/audio", "Speech-to-Text", "Editorial", "Piper TTS", "Publishing", "CRM"],
       highlights: {
@@ -286,7 +354,7 @@ window.PORTFOLIO = {
         { value: "1.5M+", label: { en: "subscribers", fr: "abonnés" } }
       ],
       stack: ["Next.js", "TypeScript", "Speech-to-Text", "Piper TTS", "PostgreSQL"],
-      links: []
+      links: [{ label: "scoop-afrique.com", url: "https://www.scoop-afrique.com" }]
     },
     {
       id: "jenkins-analyzer",
@@ -336,62 +404,66 @@ window.PORTFOLIO = {
       title: "Zephyru",
       org: "Jolari Tech",
       period: "2026 →",
-      status: { en: "In R&D", fr: "En R&D" },
+      status: { en: "In development", fr: "En développement" },
       tags: ["ai", "venture"],
       icon: "spark",
       hue: 320,
       tagline: {
-        en: "Consumer app powered by recommendation and matching algorithms.",
-        fr: "Application grand public propulsée par des algorithmes de recommandation et de matching."
+        en: "A dating app powered by recommendation and matching algorithms — in active development.",
+        fr: "Une application de rencontre propulsée par des algorithmes de recommandation et de matching — en développement."
       },
       role: { en: "Founder & product lead", fr: "Fondateur & lead produit" },
       problem: {
-        en: "Generic feeds and filters make it hard for people to find the right match quickly.",
-        fr: "Les fils et filtres génériques rendent difficile de trouver rapidement la bonne correspondance."
+        en: "Mainstream dating apps optimise for swipes and engagement rather than for relevant, compatible matches.",
+        fr: "Les applications de rencontre grand public optimisent le swipe et l'engagement plutôt que la pertinence et la compatibilité des rencontres."
       },
       solution: {
-        en: "Product R&D at Jolari Tech on a consumer app whose core is a set of advanced recommendation and matching algorithms.",
-        fr: "R&D produit chez Jolari Tech sur une app grand public dont le cœur est un ensemble d'algorithmes avancés de recommandation et de matching."
+        en: "Zephyru is a dating app whose core is a set of recommendation and matching algorithms. It is still being built and has not launched in production yet.",
+        fr: "Zephyru est une application de rencontre dont le cœur est un ensemble d'algorithmes de recommandation et de matching. Elle est toujours en construction et n'est pas encore en production."
       },
       pipeline: ["User profiles & signals", "Recommendation", "Matching", "Feedback loop"],
       highlights: {
-        en: ["Built inside Jolari Tech, alongside consulting missions in Data & full-stack."],
-        fr: ["Développé au sein de Jolari Tech, en parallèle de missions de conseil Data & full-stack."]
+        en: ["Not yet in production — ongoing product R&D under Jolari Tech."],
+        fr: ["Pas encore en production — R&D produit en cours au sein de Jolari Tech."]
       },
       metrics: [],
-      stack: ["Recommender systems", "Python", "TypeScript"],
+      stack: ["Recommender systems", "Matching algorithms", "Python", "TypeScript"],
       links: []
     },
     {
       id: "hd-corporate",
-      title: "HD Corporate Platform",
+      title: "HD Corporate",
       org: { en: "Client project", fr: "Projet client" },
       period: "2026",
-      status: { en: "Delivered", fr: "Livré" },
+      status: { en: "Delivered · live", fr: "Livré · en ligne" },
       tags: ["fullstack"],
       icon: "building",
       hue: 45,
+      image: "assets/projects/hdcorporate",
       tagline: {
-        en: "Monorepo for a French corporate-law firm: marketing site, public API, back office.",
-        fr: "Monorepo pour un cabinet de secrétariat juridique : site vitrine, API publique, back-office."
+        en: "Showcase website for a business lawyer: company creation and corporate legal services.",
+        fr: "Site vitrine pour un juriste d'affaires : création de société et secrétariat juridique."
       },
-      role: { en: "Full-stack architect & developer", fr: "Architecte & développeur full-stack" },
+      role: { en: "Freelance web developer (design & build)", fr: "Développeur web freelance (conception & réalisation)" },
       problem: {
-        en: "A corporate legal-secretarial firm needed one coherent digital stack: a site that converts, bookings, and an internal tool for its team.",
-        fr: "Un cabinet de secrétariat juridique avait besoin d'un socle numérique cohérent : un site qui convertit, la prise de rendez-vous et un outil interne pour l'équipe."
+        en: "A certified business lawyer needed a credible online presence to present services — company creation (SAS, SASU, Delaware LLC), corporate legal secretarial work, M&A — and turn visitors into discovery calls.",
+        fr: "Un juriste d'affaires certifié avait besoin d'une présence en ligne crédible pour présenter ses services — création de société (SAS, SASU, LLC Delaware), secrétariat juridique, M&A — et transformer les visiteurs en appels découverte."
       },
       solution: {
-        en: "A pnpm + Turborepo TypeScript monorepo with a marketing site, a public API with webhooks, a back office and shared @hd-corporate/* packages, secured with Auth0 Actions and integrated with Cal.com for scheduling.",
-        fr: "Un monorepo TypeScript pnpm + Turborepo avec site vitrine, API publique et webhooks, back-office et packages partagés @hd-corporate/*, sécurisé par Auth0 Actions et intégré à Cal.com pour la prise de rendez-vous."
+        en: "Designed and built hdcorporate.fr: a premium showcase site with clear service pages, process and FAQ sections, transparent pricing and a free discovery-call booking flow (Cal.com), built as a TypeScript monorepo with Auth0.",
+        fr: "Conception et réalisation de hdcorporate.fr : un site vitrine haut de gamme avec pages services, processus et FAQ, tarifs transparents et prise de rendez-vous gratuite (Cal.com), développé en monorepo TypeScript avec Auth0."
       },
-      pipeline: ["Marketing site", "Cal.com booking", "Public API & webhooks", "Back office", "Auth0"],
+      pipeline: ["Brand & copy", "Service pages", "Process & FAQ", "Cal.com booking", "Launch"],
       highlights: {
-        en: ["Shared packages keep types and UI consistent across apps.", "Documented setup and responsible-disclosure security policy."],
-        fr: ["Des packages partagés gardent types et UI cohérents entre les apps.", "Setup documenté et politique de sécurité (divulgation responsable)."]
+        en: ["Live at hdcorporate.fr.", "Conversion-focused: every section leads to a booked call or a company-creation offer."],
+        fr: ["En ligne sur hdcorporate.fr.", "Orienté conversion : chaque section mène à un appel réservé ou à une offre de création de société."]
       },
       metrics: [],
-      stack: ["TypeScript", "Turborepo", "pnpm", "Auth0", "Cal.com", "Node.js"],
-      links: [{ label: "GitHub", url: "https://github.com/ngucho/hdcorporate" }]
+      stack: ["TypeScript", "Turborepo", "Auth0", "Cal.com", "SEO"],
+      links: [
+        { label: "hdcorporate.fr", url: "https://www.hdcorporate.fr" },
+        { label: "GitHub", url: "https://github.com/ngucho/hdcorporate" }
+      ]
     },
     {
       id: "constitutive-law-ml",
@@ -518,8 +590,8 @@ window.PORTFOLIO = {
       id: "cholala-pepper",
       title: "Cholala Pepper",
       org: "Cholala Pepper",
-      period: "2024 →",
-      status: { en: "Venture", fr: "Entreprise" },
+      period: "2024 — 2025",
+      status: { en: "Stopped", fr: "Arrêté" },
       tags: ["venture"],
       icon: "leaf",
       hue: 10,
@@ -537,7 +609,14 @@ window.PORTFOLIO = {
         fr: "Structuration de toute la supply chain — sourcing producteurs, logistique internationale, distribution multicanale — et pilotage à distance avec coordination agile, suivi KPI et modélisation financière."
       },
       pipeline: ["Producers (CM)", "Processing", "Logistics", "Distribution (FR)", "KPIs"],
-      highlights: { en: ["Cross-continent operations coordinated remotely."], fr: ["Opérations intercontinentales coordonnées à distance."] },
+      outcome: {
+        en: "The project was stopped in 2025 after a crop disease destroyed the plantations.",
+        fr: "Le projet a été arrêté en 2025 après qu'une maladie a détruit les plantations."
+      },
+      highlights: {
+        en: ["Cross-continent operations coordinated remotely."],
+        fr: ["Opérations intercontinentales coordonnées à distance."]
+      },
       metrics: [],
       stack: ["Supply chain", "Financial modelling", "Ops", "Growth"],
       links: []

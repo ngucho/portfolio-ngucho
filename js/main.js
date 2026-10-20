@@ -16,16 +16,18 @@
     en: {
       skip: "Skip to content",
       "nav.about": "About", "nav.experience": "Experience", "nav.projects": "Projects", "nav.skills": "Skills", "nav.opensource": "Open source", "nav.contact": "Let's talk",
-      "hero.available": "Open to Data/AI leadership roles & consulting",
+      "hero.available": "Open to Data/AI lead roles — Paris, West Africa or remote",
       "hero.hi": "Hi, I'm",
       "hero.lead": "I design, ship and govern end-to-end Data & AI systems — from real-time anomaly detection on aircraft-engine lines at Safran to GenAI medical scribes and voice AI for African media.",
       "hero.cta1": "Explore my work", "hero.cta2": "Get in touch", "hero.cv": "Download CV",
       "about.title": "About",
       "about.p1": "Data Scientist & AI Project Lead with 4+ years designing, deploying and governing Data/AI solutions end to end — and an entrepreneur who co-founded two startups.",
       "about.p2": "At Safran Aircraft Engines I lead a team of four engineers and own an architecture that goes from high-frequency sensor data to real-time anomaly detection, digital twins and the dashboards people actually use. Models ship through CI/CD and are monitored around the clock.",
-      "about.p3": "Outside Safran I build products where AI meets real needs: Docfira's Scribe turns consultations into structured medical reports, even offline; at Scoop Afrique I bring speech AI to a media watched 300M+ times a month; with Jolari Tech I consult and build Zephyru.",
+      "about.p3": "Outside Safran I build products where AI meets real needs: Docfira's Scribe drafts a full consultation report in about 30 seconds; at Scoop Afrique I bring speech AI to a media watched 300M+ times a month; and I'm building Zephyru, a dating app driven by matching algorithms.",
       "about.p4": "My background — theoretical physics, applied mathematics, mechanics — means I like to understand the system before modelling it, then measure what the model changes.",
       "facts.base": "Based in", "facts.baseV": "Paris area · working with Abidjan",
+      "facts.mobility": "Mobility", "facts.mobilityV": "Open to Abidjan / West Africa, or fully remote",
+      "cal.book": "Book a call", "cal.book30": "Book a 30-min call", "cs.outcome": "Outcome",
       "facts.edu": "Education", "facts.cert": "Latest certification", "facts.lang": "Languages", "facts.langV": "French (native) · English (fluent)",
       "principles.title": "How I work",
       "principles.1t": "Start from the problem.", "principles.1": "Interviews, data audits and ROI before any model.",
@@ -45,7 +47,7 @@
       "edu.title": "Education", "cert.title": "Certifications",
       "os.title": "On GitHub", "os.sub": "Live from", "os.fork": "fork", "os.updated": "updated",
       "contact.title": "Let's build something that works in production.",
-      "contact.sub": "Hiring for a Data/AI lead role, need a consultant for an AI or data project, or want to talk health-tech in Africa? Write to me — I usually reply within 48 hours.",
+      "contact.sub": "Hiring for a Data/AI lead role, need a freelancer for an AI or data project, or want to talk health-tech in Africa? I'm open to relocating to Abidjan or elsewhere in West Africa, or working fully remote. I usually reply within 48 hours.",
       "form.t1": "Job opportunity", "form.t2": "Consulting", "form.t3": "Partnership", "form.t4": "Other",
       "form.name": "Your name", "form.email": "Your email", "form.subject": "Subject", "form.message": "Message", "form.send": "Send message",
       "form.sending": "Sending…", "form.ok": "Thanks! Your message is on its way — I'll get back to you soon.",
@@ -57,16 +59,18 @@
     fr: {
       skip: "Aller au contenu",
       "nav.about": "Profil", "nav.experience": "Parcours", "nav.projects": "Projets", "nav.skills": "Compétences", "nav.opensource": "Open source", "nav.contact": "Me contacter",
-      "hero.available": "Ouvert aux postes de lead Data/IA & missions de conseil",
+      "hero.available": "Ouvert aux postes de lead Data/IA — Paris, Afrique de l'Ouest ou remote",
       "hero.hi": "Bonjour, je suis",
       "hero.lead": "Je conçois, déploie et gouverne des systèmes Data & IA de bout en bout — de la détection d'anomalies temps réel sur les lignes moteurs de Safran aux scribes médicaux GenAI et à l'IA vocale pour les médias africains.",
       "hero.cta1": "Voir mes projets", "hero.cta2": "Me contacter", "hero.cv": "Télécharger le CV",
       "about.title": "Profil",
       "about.p1": "Data Scientist & Chef de projet IA avec plus de 4 ans d'expérience dans la conception, le déploiement et la gouvernance de solutions Data/IA de bout en bout — et entrepreneur, co-fondateur de deux startups.",
       "about.p2": "Chez Safran Aircraft Engines, j'encadre une équipe de quatre ingénieurs et porte une architecture qui va des données capteurs haute fréquence à la détection d'anomalies temps réel, aux jumeaux numériques et aux dashboards réellement utilisés. Les modèles sont livrés en CI/CD et supervisés 24/7.",
-      "about.p3": "En parallèle, je construis des produits où l'IA répond à de vrais besoins : Scribe de Docfira transforme les consultations en comptes rendus médicaux structurés, même hors ligne ; chez Scoop Afrique, j'apporte l'IA vocale à un média vu plus de 300M de fois par mois ; avec Jolari Tech, je fais du conseil et développe Zephyru.",
+      "about.p3": "En parallèle, je construis des produits où l'IA répond à de vrais besoins : Scribe de Docfira rédige un compte rendu de consultation complet en 30 secondes environ ; chez Scoop Afrique, j'apporte l'IA vocale à un média vu plus de 300M de fois par mois ; et je développe Zephyru, une application de rencontre pilotée par des algorithmes de matching.",
       "about.p4": "Mon parcours — physique théorique, mathématiques appliquées, mécanique — me pousse à comprendre le système avant de le modéliser, puis à mesurer ce que le modèle change.",
       "facts.base": "Basé à", "facts.baseV": "Région parisienne · en lien avec Abidjan",
+      "facts.mobility": "Mobilité", "facts.mobilityV": "Ouvert à Abidjan / Afrique de l'Ouest, ou full remote",
+      "cal.book": "Réserver un appel", "cal.book30": "Réserver un appel de 30 min", "cs.outcome": "Issue",
       "facts.edu": "Formation", "facts.cert": "Dernière certification", "facts.lang": "Langues", "facts.langV": "Français (natif) · Anglais (courant)",
       "principles.title": "Ma façon de travailler",
       "principles.1t": "Partir du problème.", "principles.1": "Entretiens, audit des données et ROI avant tout modèle.",
@@ -86,7 +90,7 @@
       "edu.title": "Formation", "cert.title": "Certifications",
       "os.title": "Sur GitHub", "os.sub": "En direct de", "os.fork": "fork", "os.updated": "mis à jour",
       "contact.title": "Construisons quelque chose qui tourne en production.",
-      "contact.sub": "Vous recrutez un lead Data/IA, cherchez un consultant pour un projet IA ou data, ou voulez parler e-santé en Afrique ? Écrivez-moi — je réponds en général sous 48 h.",
+      "contact.sub": "Vous recrutez un lead Data/IA, cherchez un freelance pour un projet IA ou data, ou voulez parler e-santé en Afrique ? Je suis ouvert à une relocalisation à Abidjan ou ailleurs en Afrique de l'Ouest, ou au full remote. Je réponds en général sous 48 h.",
       "form.t1": "Opportunité d'emploi", "form.t2": "Conseil", "form.t3": "Partenariat", "form.t4": "Autre",
       "form.name": "Votre nom", "form.email": "Votre email", "form.subject": "Objet", "form.message": "Message", "form.send": "Envoyer",
       "form.sending": "Envoi…", "form.ok": "Merci ! Votre message est parti — je reviens vers vous rapidement.",
@@ -104,6 +108,9 @@
     return String(str == null ? "" : str).replace(/[&<>"']/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
     });
+  }
+  function picture(base, alt) {
+    return '<picture><source srcset="' + base + '.webp" type="image/webp"><img src="' + base + '.jpg" alt="' + esc(alt) + '" loading="lazy" decoding="async"></picture>';
   }
   function icon(name, cls) { return '<svg class="ico' + (cls ? " " + cls : "") + '" aria-hidden="true"><use href="#i-' + name + '"/></svg>'; }
   function $(sel, ctx) { return (ctx || document).querySelector(sel); }
@@ -157,7 +164,7 @@
     $("#projectsGrid").innerHTML = D.projects.map(function (p) {
       var hidden = projFilter !== "all" && p.tags.indexOf(projFilter) === -1 ? " is-hidden" : "";
       return '<article class="project reveal' + (p.featured ? " featured" : "") + hidden + '" role="button" tabindex="0" data-id="' + p.id + '" style="--h:' + p.hue + '" aria-label="' + esc(projTitle(p) + " — " + s("projects.open")) + '">' +
-        '<div class="project-visual">' + icon(p.icon) +
+        '<div class="project-visual' + (p.image ? " has-image" : "") + '">' + (p.image ? picture(p.image, "") : icon(p.icon)) +
         '<span class="project-status">' + esc(t(p.status)) + "</span>" +
         (p.featured ? '<span class="project-star">' + s("projects.featured") + "</span>" : "") + "</div>" +
         '<div class="project-body">' +
@@ -207,7 +214,7 @@
   var LANG_COLORS = { TypeScript: "#3178c6", JavaScript: "#f1e05a", Python: "#3572A5", HTML: "#e34c26", Shell: "#89e051", CSS: "#563d7c" };
   var FALLBACK_REPOS = [
     { name: "Jenkins-Analyzer", description: "Visualise, forecast and rebalance Jenkins load — Angular 20, no backend.", language: "TypeScript", fork: false, stargazers_count: 0, html_url: "https://github.com/ngucho/Jenkins-Analyzer", pushed_at: "2026-10-19" },
-    { name: "hdcorporate", description: "A French legal secretarial and corporate consulting firm's website", language: "TypeScript", fork: false, stargazers_count: 0, html_url: "https://github.com/ngucho/hdcorporate", pushed_at: "2026-05-03" },
+    { name: "hdcorporate", description: "Showcase website for a business lawyer — hdcorporate.fr", language: "TypeScript", fork: false, stargazers_count: 0, html_url: "https://github.com/ngucho/hdcorporate", pushed_at: "2026-05-03" },
     { name: "InceptionTime-Pytorch", description: "A simple adaptation of the InceptionTime network (Ismail, 2020) in PyTorch", language: "Python", fork: false, stargazers_count: 0, html_url: "https://github.com/ngucho/InceptionTime-Pytorch", pushed_at: "2022-09-11" },
     { name: "portfolio-ngucho", description: "This website.", language: "HTML", fork: false, stargazers_count: 0, html_url: "https://github.com/ngucho/portfolio-ngucho", pushed_at: "2026-10-20" }
   ];
@@ -237,6 +244,18 @@
       .catch(function () { /* keep fallback */ });
   }
 
+  // Calendly buttons stay hidden until profile.calendly is set in data.js.
+  function setupCalendly() {
+    var url = D.profile.calendly;
+    $$("[data-calendly]").forEach(function (el) {
+      if (!url) { el.hidden = true; return; }
+      el.hidden = false;
+      el.href = url;
+      el.target = "_blank";
+      el.rel = "noopener";
+    });
+  }
+
   function renderAll() {
     applyStaticI18n();
     renderStats();
@@ -245,6 +264,7 @@
     renderProjects();
     renderSkills();
     renderRepos();
+    setupCalendly();
     observeReveals();
     observeCounters();
     restartTyping();
@@ -282,6 +302,7 @@
       "</div></section>" : "";
     var links = '<div class="cs-links">' +
       p.links.map(function (l) { return '<a class="btn btn-ghost" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + icon(l.label === "GitHub" ? "github" : "external") + esc(l.label) + "</a>"; }).join("") +
+      (D.profile.calendly ? '<a class="btn btn-ghost" href="' + esc(D.profile.calendly) + '" target="_blank" rel="noopener">' + icon("calendar") + s("cal.book") + "</a>" : "") +
       '<a class="btn btn-primary" href="#contact" data-close-go>' + icon("mail") + s("cs.talk") + "</a></div>";
 
     $("#modalBody").innerHTML =
@@ -289,6 +310,8 @@
       '<div class="cs-meta"><span>' + esc(t(p.org)) + "</span><span>" + esc(p.period) + "</span><span>" + esc(t(p.status)) + "</span></div>" +
       '<h2 id="modalTitle">' + esc(projTitle(p)) + "</h2><p>" + esc(t(p.tagline)) + "</p></header>" +
       '<div class="cs-content">' +
+      (p.image ? '<figure class="cs-shot">' + picture(p.image, projTitle(p) + " — screenshot") + "</figure>" : "") +
+      (p.outcome ? '<section class="cs-block cs-outcome"><h4>' + s("cs.outcome") + "</h4><p>" + esc(t(p.outcome)) + "</p></section>" : "") +
       '<div class="cs-two"><section class="cs-block"><h4>' + s("cs.problem") + "</h4><p>" + esc(t(p.problem)) + "</p></section>" +
       '<section class="cs-block"><h4>' + s("cs.role") + "</h4><p>" + esc(t(p.role)) + "</p></section></div>" +
       '<section class="cs-block"><h4>' + s("cs.solution") + "</h4><p>" + esc(t(p.solution)) + "</p></section>" +

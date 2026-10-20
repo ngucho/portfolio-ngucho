@@ -58,6 +58,7 @@ body {
   -webkit-font-smoothing: antialiased;
   transition: background-color .3s, color .3s;
 }
+[hidden] { display: none !important; }
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; color: inherit; cursor: pointer; }
@@ -249,8 +250,14 @@ body.has-pointer .cursor-glow { opacity: 1; }
 .project-visual .ico { position: relative; width: 56px; height: 56px; color: hsl(var(--h) 85% 70%); transition: transform .4s; }
 :root[data-theme="light"] .project-visual .ico { color: hsl(var(--h) 70% 38%); }
 .project:hover .project-visual .ico { transform: scale(1.12) rotate(-6deg); }
-.project-status { position: absolute; top: 14px; left: 14px; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; background: color-mix(in srgb, var(--bg) 70%, transparent); border: 1px solid var(--line-strong); backdrop-filter: blur(6px); }
-.project-star { position: absolute; top: 14px; right: 14px; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; background: var(--accent); color: var(--accent-ink); }
+.project-visual.has-image { place-items: stretch; }
+.project-visual.has-image::before { display: none; }
+.project-visual picture, .project-visual img { width: 100%; height: 100%; }
+.project-visual img { object-fit: cover; object-position: top center; transition: transform .6s ease; }
+.project-visual.has-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, color-mix(in srgb, var(--surface) 70%, transparent)); }
+.project:hover .project-visual img { transform: scale(1.05); }
+.project-status { position: absolute; z-index: 1; top: 14px; left: 14px; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; background: color-mix(in srgb, var(--bg) 70%, transparent); border: 1px solid var(--line-strong); backdrop-filter: blur(6px); }
+.project-star { z-index: 1; position: absolute; top: 14px; right: 14px; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; background: var(--accent); color: var(--accent-ink); }
 .project-body { flex: 1; display: flex; flex-direction: column; padding: 20px 22px 22px; }
 .project-org { font-family: var(--mono); font-size: 12.5px; color: var(--faint); margin-bottom: 6px; }
 .project h3 { font-size: 1.22rem; margin-bottom: 8px; }
@@ -277,6 +284,10 @@ body.has-pointer .cursor-glow { opacity: 1; }
 .cs-hero h2 { font-size: clamp(1.7rem, 3.6vw, 2.5rem); margin-bottom: 12px; }
 .cs-hero p { color: var(--muted); font-size: 1.08rem; margin: 0; max-width: 40em; }
 .cs-content { padding: 32px 40px 40px; display: grid; gap: 32px; }
+.cs-shot { margin: 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--line-strong); box-shadow: var(--shadow); }
+.cs-shot img { width: 100%; height: auto; }
+.cs-outcome { padding: 16px 18px; border-radius: 12px; border: 1px solid color-mix(in srgb, var(--accent-3) 45%, transparent); background: color-mix(in srgb, var(--accent-3) 10%, transparent); }
+.cs-block.cs-outcome h4 { color: var(--accent-3); }
 .cs-block h4 { font-size: 13px; font-family: var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin-bottom: 10px; font-weight: 500; }
 .cs-block p { color: var(--muted); margin: 0; }
 .cs-two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
