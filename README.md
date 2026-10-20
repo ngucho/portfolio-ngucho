@@ -1,86 +1,48 @@
-# Docfira Portfolio
+# Jordan NGUCHO — Portfolio
 
-Portfolio professionnel de **Jordan NGUCHO** — Présentation du projet Docfira, plateforme e-santé pour le suivi intelligent des maladies chroniques en Côte d'Ivoire.
+Personal website of **Jordan NGUCHO**, Data Scientist & AI Project Lead (Safran Aircraft Engines), co-founder of Docfira, CTO of Scoop Afrique and founder of Jolari Tech.
 
-## 📋 Description
+Static site — plain HTML, CSS and JavaScript, no build step.
 
-Docfira est une plateforme mobile & web conçue pour le suivi intelligent des maladies chroniques (hypertension, diabète) en Côte d'Ivoire. La solution combine une application patient, un dashboard professionnel, des alertes IA, et des fonctionnalités offline avec fallback SMS/USSD.
+## Features
 
-## 🚀 Fonctionnalités
+- Bilingual **EN / FR** (auto-detected from the browser, toggle in the nav, remembered)
+- Dark / light theme (follows the system, toggle in the nav)
+- Animated neural-network hero, typed roles, animated counters, scroll reveals, tilt & magnetic effects (all disabled with `prefers-reduced-motion`)
+- Filterable experience timeline and project grid
+- Full **case study** per project in a modal — problem, role, solution, architecture pipeline, impact, stack, links — with shareable deep links (`#project/<id>`) and keyboard navigation (← → Esc)
+- Skills linked to the projects that use them
+- Live GitHub repositories (with an offline fallback)
+- Contact form via EmailJS, with automatic `mailto:` fallback; one-click email copy
 
-- **Application patient** : Saisie simple des mesures, rappels, éducation thérapeutique, mode offline
-- **Dashboard professionnel** : Historique, alertes, priorisation patients à risque, téléconsultation intégrée
-- **IA & alertes** : Détection d'anomalies, recommandations actionnables et scoring prioritaire
-- **Offline-first** : Fonctionnement sans connexion avec synchronisation automatique
-- **SMS/USSD** : Fallback pour les zones à faible connectivité
-
-## 🛠️ Technologies
-
-- **Frontend** : Next.js / React
-- **Backend** : Django / FastAPI
-- **Base de données** : PostgreSQL
-- **Cache** : Redis
-- **Infrastructure** : Docker
-- **Authentification** : Auth0
-- **IA/ML** : MLOps (RAG, LangChain)
-
-## 📁 Structure du projet
+## Structure
 
 ```
-portfolio/
-├── index.html          # Page principale du portfolio
-├── style.css           # Feuille de style CSS
-├── assets/             # Dossier pour les ressources (images, PDF, etc.)
-├── README.md           # Ce fichier
-└── .gitignore          # Fichier Git ignore
+index.html        page skeleton, icon sprite, static copy
+css/style.css     design tokens (dark/light), layout, components
+js/data.js        ALL content: profile, stats, experience, projects, skills, education
+js/main.js        rendering, i18n, interactions, contact form
+assets/           profile photo (jpg/webp) and CV (PDF)
 ```
 
-## 🌐 Déploiement
+## Editing content
 
-Ce portfolio peut être déployé sur :
-- **GitHub Pages** : Activez GitHub Pages dans les paramètres du dépôt
-- **Netlify** : Drag & drop du dossier ou via Git
-- **Vercel** : Connexion du dépôt GitHub
-- Tout autre hébergeur de sites statiques
+Everything lives in `js/data.js`. Every visible string is `{ en: "...", fr: "..." }`.
+To add a project, copy an object in `projects` and change it: `id` becomes the deep link, `hue` sets the card colour, `icon` is one of the sprite icons in `index.html` (`pulse`, `engine`, `wave`, `chart`, `spark`, `building`, `network`, `eye`, `cube`, `leaf`, …), and `tags` map to the filter chips in `categories`.
 
-### Déploiement sur GitHub Pages
+Interface labels (buttons, headings) are in the `UI` dictionary at the top of `js/main.js`.
 
-1. Créez un nouveau dépôt sur GitHub
-2. Uploadez les fichiers du portfolio
-3. Allez dans **Settings** > **Pages**
-4. Sélectionnez la branche `main` (ou `master`)
-5. Le site sera disponible à `https://ngucho.github.io/portfolio-ngucho/`
+## Run locally
 
-## 📝 Notes importantes
+```bash
+python3 -m http.server 8000
+# open http://localhost:8000
+```
 
-- **Vidéo YouTube** : Remplacez `YOUTUBE_ID` dans `index.html` par l'ID réel de votre vidéo
-- **CV PDF** : Le fichier LaTeX est fourni (`Jordan_NGucho_CV.tex`). Pour générer le PDF :
-  - Installez LaTeX (MiKTeX sur Windows, MacTeX sur Mac, ou TeX Live sur Linux)
-  - Compilez avec `pdflatex Jordan_NGucho_CV.tex`
-  - Ou utilisez un service en ligne comme Overleaf
-- **Images** : Les images sont maintenant dans le dossier `assets/` (profil.jpg)
-- **CV** : Le CV est disponible dans `assets/Jordan-ngucho-cv.pdf`
-- **Contact** : Mettez à jour les informations de contact (email, téléphone, LinkedIn, GitHub) dans `index.html` et `Jordan_NGucho_CV.tex`
-- **EmailJS Configuration** : Suivez les instructions ci-dessous pour configurer le formulaire de contact
+## Deploy
 
-## 👤 Auteur
+Any static host works. On **GitHub Pages**: Settings → Pages → deploy from the `main` branch, root folder.
 
-**Jordan NGUCHO**
-- Founder & Tech Lead — Docfira
-- Paris, France
-- Disponible pour déplacement Abidjan
+## Contact
 
-## 📄 Licence
-
-Ce portfolio est un projet personnel. Tous droits réservés.
-
-## 🔗 Liens
-
-- [LinkedIn](https://linkedin.com/in/jordan-ngucho)
-- [GitHub](https://github.com/ngucho)
-- [Diaspora Connect](https://diaspora-connect.africa/)
-
----
-
-*Mis à jour en Novembre 2025*
-
+ymbeutchou@gmail.com · [LinkedIn](https://linkedin.com/in/jordan-ngucho) · [GitHub](https://github.com/ngucho)
