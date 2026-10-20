@@ -26,7 +26,7 @@ window.PORTFOLIO = {
     { value: 4, suffix: "+", label: { en: "years building Data & AI", fr: "ans en Data & IA" } },
     { value: 5, suffix: "+", label: { en: "industrial AI projects in production", fr: "projets IA industriels en production" } },
     { value: 380, suffix: "+", label: { en: "user interviews led", fr: "entretiens utilisateurs menés" } },
-    { value: 300, suffix: "M+", label: { en: "monthly views on media I power", fr: "vues/mois sur le média que j'équipe" } }
+    { value: 1.8, decimals: 1, suffix: "M", label: { en: "audience of the media I power", fr: "d'audience pour le média que j'équipe" } }
   ],
 
   experience: [
@@ -78,11 +78,11 @@ window.PORTFOLIO = {
       type: "venture",
       points: {
         en: [
-          "Deployed Speech-to-Text and Text-to-Speech (Piper) into a media reaching 300M+ views/month and 1.5M+ subscribers.",
+          "Deployed Speech-to-Text and Text-to-Speech (Piper) into a West African media with a 1.8M cumulative audience (TikTok, Facebook, Threads, Instagram, YouTube).",
           "Built a custom Next.js CRM; own the technical roadmap, budgets and hiring."
         ],
         fr: [
-          "Déploiement de solutions Speech-to-Text et Text-to-Speech (Piper) pour un média à 300M+ vues/mois et 1,5M+ abonnés.",
+          "Déploiement de solutions Speech-to-Text et Text-to-Speech (Piper) pour un média ouest-africain à 1,8 M d'audience cumulée (TikTok, Facebook, Threads, Instagram, YouTube).",
           "Développement d'un CRM sur mesure en Next.js ; pilotage de la roadmap technique, des budgets et du recrutement."
         ]
       }
@@ -324,8 +324,8 @@ window.PORTFOLIO = {
       hue: 0,
       image: "assets/projects/scoop-afrique",
       tagline: {
-        en: "Speech AI and a custom CRM for a media with 300M+ monthly views.",
-        fr: "IA vocale et CRM sur mesure pour un média à 300M+ vues mensuelles."
+        en: "Speech AI and a custom CRM for the West African media of a generation that \"doesn't wait its turn\".",
+        fr: "IA vocale et CRM sur mesure pour le média de la génération ouest-africaine « qui n'attend pas son tour »."
       },
       role: { en: "CTO & Strategy / Operations Director", fr: "CTO & Directeur Stratégie / Opérations" },
       problem: {
@@ -339,22 +339,28 @@ window.PORTFOLIO = {
       pipeline: ["Raw video/audio", "Speech-to-Text", "Editorial", "Piper TTS", "Publishing", "CRM"],
       highlights: {
         en: [
-          "Voice AI running behind 300M+ views/month and 1.5M+ subscribers.",
+          "Voice AI behind a media with 1.8M cumulative audience and ~4.9M views & impressions per month.",
+          "Brand studio and advertiser offer (brands.scoop-afrique.com) that funds an independent newsroom — no government or political money.",
           "Self-hosted TTS keeps per-minute costs low.",
           "In-house CRM built around the team's real sales process."
         ],
         fr: [
-          "IA vocale derrière 300M+ vues/mois et 1,5M+ abonnés.",
+          "IA vocale derrière un média à 1,8 M d'audience cumulée et ~4,9 M de vues et impressions par mois.",
+          "Studio et offre annonceurs (brands.scoop-afrique.com) qui financent une rédaction indépendante — aucun argent public ni politique.",
           "TTS auto-hébergé pour maîtriser le coût à la minute.",
           "CRM interne construit autour du vrai processus commercial de l'équipe."
         ]
       },
       metrics: [
-        { value: "300M+", label: { en: "views / month", fr: "vues / mois" } },
-        { value: "1.5M+", label: { en: "subscribers", fr: "abonnés" } }
+        { value: "1.8M", label: { en: "cumulative audience", fr: "audience cumulée" } },
+        { value: "4.9M", label: { en: "views & impressions / month", fr: "vues & impressions / mois" } },
+        { value: "1.05M", label: { en: "TikTok followers", fr: "abonnés TikTok" } }
       ],
       stack: ["Next.js", "TypeScript", "Speech-to-Text", "Piper TTS", "PostgreSQL"],
-      links: [{ label: "scoop-afrique.com", url: "https://www.scoop-afrique.com" }]
+      links: [
+        { label: "brands.scoop-afrique.com", url: "https://brands.scoop-afrique.com" },
+        { label: "scoop-afrique.com", url: "https://www.scoop-afrique.com" }
+      ]
     },
     {
       id: "jenkins-analyzer",
@@ -468,7 +474,7 @@ window.PORTFOLIO = {
     {
       id: "constitutive-law-ml",
       title: { en: "ML Selection of Constitutive Laws", fr: "Sélection ML de lois de comportement" },
-      org: "Safran Tech",
+      org: "Safran Tech · MINES ParisTech",
       period: "2021 — 2022",
       status: { en: "Research", fr: "Recherche" },
       tags: ["ai", "industrial"],
@@ -489,12 +495,12 @@ window.PORTFOLIO = {
       },
       pipeline: ["Loading histories", "Feature extraction", "CNN classifier", "GP / KNN", "Law recommendation", "ABAQUS validation"],
       highlights: {
-        en: ["Bridges physics-based simulation and machine learning.", "Also applied to manufacturing-process optimisation."],
-        fr: ["Fait le pont entre simulation physique et machine learning.", "Également appliqué à l'optimisation de procédés de fabrication."]
+        en: ["Bridges physics-based simulation and machine learning.", "Run as my MINES ParisTech specialised-master project within the BIGMECA research chair with Safran.", "Also applied to manufacturing-process optimisation."],
+        fr: ["Fait le pont entre simulation physique et machine learning.", "Mené comme projet de Mastère Spécialisé MINES ParisTech au sein de la chaire de recherche BIGMECA avec Safran.", "Également appliqué à l'optimisation de procédés de fabrication."]
       },
       metrics: [],
       stack: ["Python", "TensorFlow", "Scikit-learn", "Gaussian Processes", "ABAQUS"],
-      links: []
+      links: [{ label: "BIGMECA chair (MINES ParisTech)", url: "https://bigmeca.minesparis.psl.eu/wp-content/uploads/2023/05/BIGMECA_CODOR4.pdf" }]
     },
     {
       id: "spatter-detection",
@@ -525,7 +531,7 @@ window.PORTFOLIO = {
       },
       metrics: [],
       stack: ["Python", "YOLOv4", "Mask-RCNN", "OpenCV", "TensorFlow"],
-      links: []
+      links: [{ label: "ResearchGate", url: "https://www.researchgate.net/publication/355890084_Deep_Learning_for_Detection_and_Tracking_of_Spatters_in_Laser_Powder_Bed_Fusion_Processes" }]
     },
     {
       id: "composite-digital-twin",
@@ -648,6 +654,70 @@ window.PORTFOLIO = {
       icon: "cube",
       title: { en: "Simulation", fr: "Simulation" },
       items: ["Multi-scale FEM", "LS-DYNA", "ABAQUS", "ANSA", "ANSYS", "Composites"]
+    }
+  ],
+
+  // Research output found online (Google Scholar-style list).
+  publications: [
+    {
+      year: "2021",
+      type: { en: "Journal article", fr: "Article de revue" },
+      title: "The impact of COVID-19 vaccination campaigns accounting for antibody-dependent enhancement",
+      venue: "PLOS ONE 16(4): e0245417",
+      authors: "N. A. M. Yousif, H. C. J. Tsoungui Obama, Y. J. Ngucho Mbeutchou, et al., K. A. Schneider",
+      note: {
+        en: "Co-first author (equal contribution). Extended the CovidSim model to test vaccination timing, coverage and efficacy in Germany, including the antibody-dependent-enhancement risk.",
+        fr: "Co-premier auteur (contribution égale). Extension du modèle CovidSim pour évaluer calendrier, couverture et efficacité de la vaccination en Allemagne, y compris le risque d'ADE."
+      },
+      links: [
+        { label: "DOI", url: "https://doi.org/10.1371/journal.pone.0245417" },
+        { label: "Code (Zenodo)", url: "https://doi.org/10.5281/zenodo.4659000" }
+      ]
+    },
+    {
+      year: "2021",
+      type: { en: "Research report · ONERA", fr: "Rapport de recherche · ONERA" },
+      title: "Deep Learning for Detection and Tracking of Spatters in Laser Powder Bed Fusion Processes",
+      venue: "ONERA — Université Paris-Saclay",
+      authors: "Y. J. Ngucho Mbeutchou",
+      note: {
+        en: "YOLO and Mask-RCNN pipeline to detect and track spatters on high-speed videos of metal 3D printing.",
+        fr: "Pipeline YOLO et Mask-RCNN pour détecter et suivre les éjectas sur vidéos rapides d'impression 3D métal."
+      },
+      links: [{ label: "ResearchGate", url: "https://www.researchgate.net/publication/355890084_Deep_Learning_for_Detection_and_Tracking_of_Spatters_in_Laser_Powder_Bed_Fusion_Processes" }]
+    },
+    {
+      year: "2021 — 2022",
+      type: { en: "Research project · BIGMECA chair", fr: "Projet de recherche · chaire BIGMECA" },
+      title: { en: "Machine learning for the selection of constitutive laws in nonlinear structural mechanics", fr: "Machine learning pour la sélection des lois de comportement en mécanique non linéaire des structures" },
+      venue: "MINES ParisTech — Centre des Matériaux × Safran Tech",
+      authors: "Y. J. Ngucho Mbeutchou",
+      note: {
+        en: "Specialised-master project in the BIGMECA industrial research chair (MINES ParisTech & Safran).",
+        fr: "Projet de Mastère Spécialisé dans la chaire de recherche industrielle BIGMECA (MINES ParisTech & Safran)."
+      },
+      links: [{ label: "BIGMECA", url: "https://bigmeca.minesparis.psl.eu/wp-content/uploads/2023/05/BIGMECA_CODOR4.pdf" }]
+    },
+    {
+      year: "2019",
+      type: { en: "MSc thesis · AIMS Cameroon", fr: "Mémoire de master · AIMS Cameroun" },
+      title: "Analogies Between Gravity and Fluid Dynamics",
+      venue: "African Institute for Mathematical Sciences — supervised by Dr Pierre Fleury (Université de Genève)",
+      authors: "Y. J. Ngucho Mbeutchou",
+      note: {
+        en: "Gives a physical meaning to the gravity–hydrodynamics analogy (absorption and thermal models), with a relativistic extension inspired by Einstein-æther theory.",
+        fr: "Donne un sens physique à l'analogie gravité–hydrodynamique (modèles d'absorption et thermique), avec une extension relativiste inspirée de la théorie Einstein-æther."
+      },
+      links: [{ label: "PDF", url: "https://aims-cameroon.org/wp-content/uploads/sites/6/2021/04/Yvan-Jordan-Ngucho-Mbeutchou_Analogies-Between-Gravity-and-Fluid-Dynamics.pdf" }]
+    },
+    {
+      year: "2018",
+      type: { en: "MSc thesis · Université de Douala", fr: "Mémoire de Master II · Université de Douala" },
+      title: "Théorie Conforme des Champs de Liouville",
+      venue: { en: "Theoretical physics — supervised by Ousmanou Dafounansou", fr: "Physique théorique — sous la direction d'Ousmanou Dafounansou" },
+      authors: "Y. J. Ngucho Mbeutchou",
+      note: { en: "Liouville conformal field theory.", fr: "Théorie conforme des champs de Liouville." },
+      links: [{ label: "ResearchGate", url: "https://www.researchgate.net/publication/335788115_Theorie_Conforme_des_Champs_de_Liouville" }]
     }
   ],
 

@@ -15,7 +15,8 @@
   var UI = {
     en: {
       skip: "Skip to content",
-      "nav.about": "About", "nav.experience": "Experience", "nav.projects": "Projects", "nav.skills": "Skills", "nav.opensource": "Open source", "nav.contact": "Let's talk",
+      "nav.about": "About", "nav.experience": "Experience", "nav.projects": "Projects", "nav.skills": "Skills", "nav.opensource": "Open source", "nav.research": "Research", "nav.contact": "Let's talk",
+      "pub.title": "Research & publications", "pub.sub": "Before industry: theoretical physics, epidemiological modelling and applied machine learning. Published as Yvan Jordan Ngucho Mbeutchou.",
       "hero.available": "Open to Data/AI lead roles — Paris, West Africa or remote",
       "hero.hi": "Hi, I'm",
       "hero.lead": "I design, ship and govern end-to-end Data & AI systems — from real-time anomaly detection on aircraft-engine lines at Safran to GenAI medical scribes and voice AI for African media.",
@@ -23,7 +24,7 @@
       "about.title": "About",
       "about.p1": "Data Scientist & AI Project Lead with 4+ years designing, deploying and governing Data/AI solutions end to end — and an entrepreneur who co-founded two startups.",
       "about.p2": "At Safran Aircraft Engines I lead a team of four engineers and own an architecture that goes from high-frequency sensor data to real-time anomaly detection, digital twins and the dashboards people actually use. Models ship through CI/CD and are monitored around the clock.",
-      "about.p3": "Outside Safran I build products where AI meets real needs: Docfira's Scribe drafts a full consultation report in about 30 seconds; at Scoop Afrique I bring speech AI to a media watched 300M+ times a month; and I'm building Zephyru, a dating app driven by matching algorithms.",
+      "about.p3": "Outside Safran I build products where AI meets real needs: Docfira's Scribe drafts a full consultation report in about 30 seconds; at Scoop Afrique I bring speech AI to a West African media with a 1.8M audience; and I'm building Zephyru, a dating app driven by matching algorithms.",
       "about.p4": "My background — theoretical physics, applied mathematics, mechanics — means I like to understand the system before modelling it, then measure what the model changes.",
       "facts.base": "Based in", "facts.baseV": "Paris area · working with Abidjan",
       "facts.mobility": "Mobility", "facts.mobilityV": "Open to Abidjan / West Africa, or fully remote",
@@ -58,7 +59,8 @@
     },
     fr: {
       skip: "Aller au contenu",
-      "nav.about": "Profil", "nav.experience": "Parcours", "nav.projects": "Projets", "nav.skills": "Compétences", "nav.opensource": "Open source", "nav.contact": "Me contacter",
+      "nav.about": "Profil", "nav.experience": "Parcours", "nav.projects": "Projets", "nav.skills": "Compétences", "nav.opensource": "Open source", "nav.research": "Recherche", "nav.contact": "Me contacter",
+      "pub.title": "Recherche & publications", "pub.sub": "Avant l'industrie : physique théorique, modélisation épidémiologique et machine learning appliqué. Publié sous le nom de Yvan Jordan Ngucho Mbeutchou.",
       "hero.available": "Ouvert aux postes de lead Data/IA — Paris, Afrique de l'Ouest ou remote",
       "hero.hi": "Bonjour, je suis",
       "hero.lead": "Je conçois, déploie et gouverne des systèmes Data & IA de bout en bout — de la détection d'anomalies temps réel sur les lignes moteurs de Safran aux scribes médicaux GenAI et à l'IA vocale pour les médias africains.",
@@ -66,7 +68,7 @@
       "about.title": "Profil",
       "about.p1": "Data Scientist & Chef de projet IA avec plus de 4 ans d'expérience dans la conception, le déploiement et la gouvernance de solutions Data/IA de bout en bout — et entrepreneur, co-fondateur de deux startups.",
       "about.p2": "Chez Safran Aircraft Engines, j'encadre une équipe de quatre ingénieurs et porte une architecture qui va des données capteurs haute fréquence à la détection d'anomalies temps réel, aux jumeaux numériques et aux dashboards réellement utilisés. Les modèles sont livrés en CI/CD et supervisés 24/7.",
-      "about.p3": "En parallèle, je construis des produits où l'IA répond à de vrais besoins : Scribe de Docfira rédige un compte rendu de consultation complet en 30 secondes environ ; chez Scoop Afrique, j'apporte l'IA vocale à un média vu plus de 300M de fois par mois ; et je développe Zephyru, une application de rencontre pilotée par des algorithmes de matching.",
+      "about.p3": "En parallèle, je construis des produits où l'IA répond à de vrais besoins : Scribe de Docfira rédige un compte rendu de consultation complet en 30 secondes environ ; chez Scoop Afrique, j'apporte l'IA vocale à un média ouest-africain de 1,8 M d'audience ; et je développe Zephyru, une application de rencontre pilotée par des algorithmes de matching.",
       "about.p4": "Mon parcours — physique théorique, mathématiques appliquées, mécanique — me pousse à comprendre le système avant de le modéliser, puis à mesurer ce que le modèle change.",
       "facts.base": "Basé à", "facts.baseV": "Région parisienne · en lien avec Abidjan",
       "facts.mobility": "Mobilité", "facts.mobilityV": "Ouvert à Abidjan / Afrique de l'Ouest, ou full remote",
@@ -129,7 +131,7 @@
    * ------------------------------------------------------------------ */
   function renderStats() {
     $("#stats").innerHTML = D.stats.map(function (st) {
-      return '<div class="stat reveal"><div class="stat-num"><span class="count" data-to="' + st.value + '">' + st.value + '</span>' + esc(st.suffix) +
+      return '<div class="stat reveal"><div class="stat-num"><span class="count" data-to="' + st.value + '" data-dec="' + (st.decimals || 0) + '">' + (lang === "fr" ? String(st.value).replace(".", ",") : st.value) + '</span>' + esc(st.suffix) +
         '</div><span class="stat-label">' + esc(t(st.label)) + "</span></div>";
     }).join("");
   }
@@ -201,6 +203,16 @@
           return '<span class="skill linked" tabindex="0" aria-label="' + esc(it + " — " + tip) + '">' + esc(it) +
             '<span class="skill-tip" aria-hidden="true">' + esc(tip) + "</span></span>";
         }).join("") + "</div></div>";
+    }).join("");
+    $("#pubList").innerHTML = (D.publications || []).map(function (p) {
+      return '<li class="pub reveal"><span class="pub-year">' + esc(p.year) + '</span><div class="pub-body">' +
+        '<span class="pub-type">' + esc(t(p.type)) + "</span>" +
+        "<h3>" + esc(t(p.title)) + "</h3>" +
+        '<p class="pub-venue">' + esc(t(p.venue)) + "</p>" +
+        '<p class="pub-authors">' + esc(p.authors).replace("Ngucho Mbeutchou", "<b>Ngucho Mbeutchou</b>") + "</p>" +
+        '<p class="pub-note">' + esc(t(p.note)) + "</p>" +
+        '<div class="pub-links">' + p.links.map(function (l) { return '<a href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.label) + icon("external") + "</a>"; }).join("") + "</div>" +
+        "</div></li>";
     }).join("");
     $("#eduList").innerHTML = D.education.map(function (e) {
       return "<li><b>" + esc(e.school) + "</b><em>" + esc(e.year) + "</em><span>" + esc(t(e.degree)) + "</span></li>";
@@ -496,12 +508,13 @@
   }
 
   function animateCount(el) {
-    var to = +el.getAttribute("data-to");
-    if (reduceMotion) { el.textContent = to; return; }
+    var to = +el.getAttribute("data-to"), dec = +el.getAttribute("data-dec") || 0;
+    var fmt = function (v) { var x = v.toFixed(dec); return lang === "fr" ? x.replace(".", ",") : x; };
+    if (reduceMotion) { el.textContent = fmt(to); return; }
     var start = performance.now(), dur = 1400;
     (function step(now) {
       var k = Math.min(1, (now - start) / dur);
-      el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3)));
+      el.textContent = fmt(to * (1 - Math.pow(1 - k, 3)));
       if (k < 1) requestAnimationFrame(step);
     })(start);
   }
